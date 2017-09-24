@@ -1,6 +1,6 @@
 # Sta_426
 
-## Homework 1
+## Homework 1, Part 1
 
 This is a test repository to tryout **markdown**.
 

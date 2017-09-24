@@ -1,0 +1,47 @@
+---
+title: "Homework 2"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### R Markdown exercise. Sampling from log-normal distribution
+
+***1.*** Sample 100 values from log-normal distribution with mean 1 and variance 0.25.
+
+```{r sample}
+set.seed(560)# for reproducibility
+x <- rlnorm(100, 1, .25) #sample size, mean, variance
+```
+
+***2.*** Sample mean:
+
+```{r mean}
+mean(x)
+```
+
+***3.*** Sample variance:
+
+```{r variance}
+var(x)
+```
+
+###Histogram
+
+***1.*** Histogram of the distribution:
+
+```{r histogram, }
+hist(x)
+```
+
+***2.*** Histogram of the distribution on the log scale:
+
+```{r logHistogram, }
+h = hist(x, plot=F)
+h$counts = log10(h$counts)
+plot(h, ylab='log10(Frequency)')
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

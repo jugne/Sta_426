@@ -28,7 +28,7 @@ mean(x)
 var(x)
 ```
 
-###Histogram
+### Histogram
 
 ***1.*** Histogram of the distribution:
 
